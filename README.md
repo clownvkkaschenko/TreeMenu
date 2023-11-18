@@ -2,7 +2,6 @@
   <h1>Tree Menu</h1>
   <img src="https://img.shields.io/badge/Python-3.7.9-F8F8FF?style=for-the-badge&logo=python&logoColor=20B2AA">
   <img src="https://img.shields.io/badge/Django-3.2.23-F8F8FF?style=for-the-badge&logo=django&logoColor=00FF00">
-  <img src="https://img.shields.io/badge/Docker-555555?style=for-the-badge&logo=docker&logoColor=2496ED">
 </div>
 
 # Описание проекта:
