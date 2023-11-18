@@ -1,0 +1,29 @@
+{% load static %}
+{% load tree_menu %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/static.css' %}">
+    <title>{% block title %}TreeMenu{% endblock %}</title>
+  </head>
+  <body>
+    <div class="header">
+      {% block header %}
+        <h1>
+          {% if request.get_full_path == '/' %}
+            Древовидное меню
+          {% else %}
+            Вы находитесь на странице: {{ request.get_full_path }}
+          {% endif %}
+        </h1>
+      {% endblock %}
+    </div>
+    <div class="main-content">
+      {% comment %} <div>{% draw_menu 'Введите название древовидного меню' %}</div> {% endcomment %}
+    </div>
+    {% if request.get_full_path != '/' %}
+      <a href="/">Вернуться на главную страницу</a>
+    {% endif %}
+  </body>
+</html>

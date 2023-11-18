@@ -1,0 +1,38 @@
+html, body {
+    font-size: 20px;
+    font-family: "Monaco";
+    color: #073641;
+}
+
+.main-content {
+    padding: 1rem 4rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-gap: 5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #9f9f9f;
+}
+
+li {
+    padding: 4px;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+li a:hover {
+    background-color: #7e7e7e;
+}
+
+li ul {
+    padding-left: 15px;
+}
