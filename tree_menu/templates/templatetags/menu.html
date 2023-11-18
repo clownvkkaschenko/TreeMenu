@@ -1,6 +1,6 @@
 <ul>
   {% for node in menu_tree %}
-    <li class="{% if node.active %}active{% endif %}{% if node.open %}open{% endif %}">
+    <li class="{% if node.active %}active{% endif %} {% if node.open %}open{% endif %}">
       <a href="{% url 'menu' slug=node.item.url %}">{{ node.item.name }}</a>
       {% if node.children %}
         {% if node.active or node.open %}
