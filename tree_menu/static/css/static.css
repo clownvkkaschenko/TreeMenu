@@ -12,15 +12,10 @@ html, body {
     grid-gap: 5rem;
 }
 
-ul {
+li {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #9f9f9f;
-}
-
-li {
-    padding: 4px;
 }
 
 li a {
@@ -29,10 +24,32 @@ li a {
     display: block;
 }
 
-li a:hover {
-    background-color: #7e7e7e;
+li ul {
+    padding-left: 20px;
 }
 
-li ul {
-    padding-left: 15px;
+li a:before {
+    padding-right:10px;
+    font-weight: bold;
+    color: rgb(66, 45, 225);
+    content: "\2606";
+}
+
+li a:hover:before {
+    color: rgb(66, 45, 225);
+    content: "\2605";
+}
+
+li.active > a:before {
+    color: rgb(66, 45, 225);
+    content: "\2605";
+}
+
+.item {
+    padding: .5rem 2rem;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(156, 154, 109, 0.088);
+    border-bottom: 1px solid rgb(247, 175, 107);
+    color: #6363cd;
 }
