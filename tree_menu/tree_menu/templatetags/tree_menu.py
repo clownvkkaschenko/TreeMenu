@@ -45,11 +45,11 @@ def build_menu_tree(
             children = build_menu_tree(menu_items, current_url, parent=item)
 
             is_active = item.url == current_url
-            is_active_children = any(child['active'] for child in children)
+            is_active_children = any(child['open'] for child in children)
             tree.append({
                 'item': item,
                 'children': children,
-                'active': is_active or is_active_children,
+                'active': is_active,
                 'open': is_active or is_active_children,
             })
     return tree
